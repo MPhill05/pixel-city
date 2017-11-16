@@ -9,17 +9,21 @@
 /* Begin PBXBuildFile section */
 		A72B175F0DEB30CCE16191CA /* Pods_pixel_city.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = DD9CD1A9036DC1B505FEA2C3 /* Pods_pixel_city.framework */; };
 		D61160BB1FBBFEE50085667D /* DroppablePin.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61160BA1FBBFEE50085667D /* DroppablePin.swift */; };
+		D61160BD1FBC25840085667D /* PhotoCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = D61160BC1FBC25840085667D /* PhotoCell.swift */; };
 		D670290C1FBB8FA500182285 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D670290B1FBB8FA500182285 /* AppDelegate.swift */; };
 		D670290E1FBB8FA500182285 /* MapVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D670290D1FBB8FA500182285 /* MapVC.swift */; };
 		D67029111FBB8FA500182285 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D670290F1FBB8FA500182285 /* Main.storyboard */; };
 		D67029131FBB8FA500182285 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D67029121FBB8FA500182285 /* Assets.xcassets */; };
 		D67029161FBB8FA500182285 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D67029141FBB8FA500182285 /* LaunchScreen.storyboard */; };
+		D69731D91FBE24FF007D2559 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69731D81FBE24FF007D2559 /* Constants.swift */; };
+		D69731DB1FBE46BB007D2559 /* PopVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D69731DA1FBE46BB007D2559 /* PopVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		92489BACABEB9350CB499AB8 /* Pods-pixel-city.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixel-city.debug.xcconfig"; path = "Pods/Target Support Files/Pods-pixel-city/Pods-pixel-city.debug.xcconfig"; sourceTree = "<group>"; };
 		A0F14520D46856F617FD2A0E /* Pods-pixel-city.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-pixel-city.release.xcconfig"; path = "Pods/Target Support Files/Pods-pixel-city/Pods-pixel-city.release.xcconfig"; sourceTree = "<group>"; };
 		D61160BA1FBBFEE50085667D /* DroppablePin.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DroppablePin.swift; sourceTree = "<group>"; };
+		D61160BC1FBC25840085667D /* PhotoCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoCell.swift; sourceTree = "<group>"; };
 		D67029081FBB8FA500182285 /* pixel-city.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "pixel-city.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		D670290B1FBB8FA500182285 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D670290D1FBB8FA500182285 /* MapVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapVC.swift; sourceTree = "<group>"; };
@@ -27,6 +31,8 @@
 		D67029121FBB8FA500182285 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D67029151FBB8FA500182285 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D67029171FBB8FA500182285 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D69731D81FBE24FF007D2559 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		D69731DA1FBE46BB007D2559 /* PopVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PopVC.swift; sourceTree = "<group>"; };
 		DD9CD1A9036DC1B505FEA2C3 /* Pods_pixel_city.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_pixel_city.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -97,6 +103,7 @@
 			isa = PBXGroup;
 			children = (
 				D670290D1FBB8FA500182285 /* MapVC.swift */,
+				D69731DA1FBE46BB007D2559 /* PopVC.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -105,6 +112,7 @@
 			isa = PBXGroup;
 			children = (
 				D61160BA1FBBFEE50085667D /* DroppablePin.swift */,
+				D61160BC1FBC25840085667D /* PhotoCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -119,6 +127,7 @@
 		D67029201FBB90AE00182285 /* Utilities */ = {
 			isa = PBXGroup;
 			children = (
+				D69731D81FBE24FF007D2559 /* Constants.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -246,6 +255,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D69731DB1FBE46BB007D2559 /* PopVC.swift in Sources */,
+				D69731D91FBE24FF007D2559 /* Constants.swift in Sources */,
+				D61160BD1FBC25840085667D /* PhotoCell.swift in Sources */,
 				D670290E1FBB8FA500182285 /* MapVC.swift in Sources */,
 				D61160BB1FBBFEE50085667D /* DroppablePin.swift in Sources */,
 				D670290C1FBB8FA500182285 /* AppDelegate.swift in Sources */,
